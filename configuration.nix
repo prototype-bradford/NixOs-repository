@@ -114,18 +114,19 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    neovim 
+    neovim
+    intellij
     firefox
     spotify
     obsidian
     kitty
-    kdePackages.dolphin
+    rofi
     waybar
     git
     fzf
     vscode
+    jetbrains.idea-ultimate
     fastfetch
-    polkit_gnome
   #  wget
   ];
 
