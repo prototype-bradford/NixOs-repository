@@ -115,6 +115,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     neovim
+    discord
     firefox
     spotify
     obsidian
