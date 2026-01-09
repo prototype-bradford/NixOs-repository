@@ -69,6 +69,7 @@
     xwayland.enable = true;
   };
 
+  programs.zsh.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -102,6 +103,7 @@
   users.users.stark = {
     isNormalUser = true;
     description = "Stark";
+    shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     #  thunderbird
@@ -114,19 +116,27 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    kitty
     neovim
     discord
     firefox
     spotify
+    spicetify-cli
     obsidian
-    kitty
     rofi
     waybar
     git
+    yazi
     fzf
+    proton-pass
+    protonmail-desktop
     vscode
     jetbrains.idea-community
     fastfetch
+    cmatrix
+    cava
+    peaclock
+    htop
   #  wget
   ];
 
