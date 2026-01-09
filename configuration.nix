@@ -125,6 +125,7 @@
     obsidian
     rofi
     waybar
+    swww
     git
     yazi
     fzf
