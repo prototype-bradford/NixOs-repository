@@ -4,6 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
+      ./spicetify.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -160,20 +161,20 @@
   #  wget
   ];
 
-  programs.spicetify = {
-    enable = true;
-
-    enabledExtensions = [
-      #inputs.spicetify.legacyPackages.${pkgs.system}.extensions.marketplace
-      inputs.spicetify.legacyPackages.${pkgs.system}.extensions.adblockify
-    ];
-
-    theme = inputs.spicetify.legacyPackages.${pkgs.system}.themes.hazy;
-
-    enabledCustomApps = [
-      inputs.spicetify.legacyPackages.${pkgs.system}.apps.marketplace
-    ];
-  };
+#  programs.spicetify = {
+#    enable = true;
+#
+#    enabledExtensions = [
+#      #inputs.spicetify.legacyPackages.${pkgs.system}.extensions.marketplace
+#      inputs.spicetify.legacyPackages.${pkgs.system}.extensions.adblockify
+#    ];
+#
+#    theme = inputs.spicetify.legacyPackages.${pkgs.system}.themes.hazy;
+#
+#    enabledCustomApps = [
+#      inputs.spicetify.legacyPackages.${pkgs.system}.apps.marketplace
+#    ];
+#  };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
