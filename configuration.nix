@@ -152,7 +152,7 @@
     fzf
     proton-pass
     vscode
-    jetbrains.idea-community
+    jetbrains.idea-oss
     fastfetch
     cmatrix
     cava
