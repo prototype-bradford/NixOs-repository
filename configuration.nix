@@ -8,6 +8,7 @@
       ./locale-settings.nix
       ./audio-settings.nix
       ./graphics-nvidia.nix
+      ./packages.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -140,29 +141,29 @@
   ];
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    kitty
-    neovim
-    discord
-    firefox
-    spotify
-    obsidian
-    rofi
-    waybar
-    swww
-    git
-    yazi
-    fzf
-    proton-pass
-    vscode
-    jetbrains.idea-oss
-    fastfetch
-    cmatrix
-    cava
-    peaclock
-    htop
-  #  wget
-  ];
+#  environment.systemPackages = with pkgs; [
+#    kitty
+#    neovim
+#    discord
+#    firefox
+#    spotify
+#    obsidian
+#    rofi
+#    waybar
+#    swww
+#    git
+#    yazi
+#    fzf
+#    proton-pass
+#    vscode
+#    jetbrains.idea-oss
+#    fastfetch
+#    cmatrix
+#    cava
+#    peaclock
+#    htop
+#  #  wget
+#  ];
 
 #  programs.spicetify = {
 #    enable = true;
