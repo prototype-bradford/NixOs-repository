@@ -9,6 +9,7 @@
       ./audio-settings.nix
       ./graphics-nvidia.nix
       ./packages.nix
+      ./users-settings.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -122,16 +123,16 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.stark = {
-    isNormalUser = true;
-    description = "Stark";
-    shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    #  thunderbird
-    ];
-  };
+#  # Define a user account. Don't forget to set a password with ‘passwd’.
+#  users.users.stark = {
+#    isNormalUser = true;
+#    description = "Stark";
+#    shell = pkgs.zsh;
+#    extraGroups = [ "networkmanager" "wheel" ];
+#    packages = with pkgs; [
+#    #  thunderbird
+#    ];
+#  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
