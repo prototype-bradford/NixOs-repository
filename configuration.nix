@@ -10,6 +10,7 @@
       ./graphics-nvidia.nix
       ./packages.nix
       ./users-settings.nix
+      ./wm-settings.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -61,16 +62,16 @@
 #    LC_TIME = "pt_BR.UTF-8";
 #  };
 
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-hyprland
-      ];
-  };
+#  xdg.portal = {
+#    enable = true;
+#    extraPortals = with pkgs; [
+#      xdg-desktop-portal-hyprland
+#      ];
+#  };
 
-  services.seatd.enable = true;
+#  services.seatd.enable = true;
 
-  security.polkit.enable = true;
+#  security.polkit.enable = true;
 
   services.displayManager.sddm = {
     enable = true;
@@ -96,11 +97,11 @@
     dedicatedServer.openFirewall = true;
   };
 
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "intl";
-  };
+#  # Configure keymap in X11
+#  services.xserver.xkb = {
+#    layout = "us";
+#    variant = "intl";
+#  };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
