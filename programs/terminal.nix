@@ -14,7 +14,7 @@ in
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      update = "sudo nixos-rebuild switch --flake /home/stark/nix-os#stark";
+      update = "sudo nixos-rebuild switch --flake /home/stark/NixOS#stark";
       vim = "nvim";
       g = "google";
       y = "youtube";

@@ -8,12 +8,13 @@
     obsidian
     rofi
     waybar
-    swww
     git
     yazi
     fzf
     proton-pass
     vscode
     jetbrains.idea-oss
+    hypridle
+    hyprpaper
   ];
 }
